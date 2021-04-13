@@ -1,0 +1,121 @@
+<html>
+<head>
+    <title>SIGN UP</title>
+    <style>body{background-color: aqua;}
+        table{border: 5px solid green;
+        padding-top:70px;
+        padding-bottom:100px;
+        padding-left:30px;
+        padding-right:30px;
+        margin: auto;}
+    h1{padding-left:510px;
+    }
+    h2{padding-left: 650px;}
+    h1{padding-top:100px;}
+        </style>
+    <script>function validation (){
+    if(document.getElementById("fname").value==""){
+        document.getElementById("error1").innerHTML="This Field is required!";
+        Go = false;
+    }
+    if(document.getElementById("lname").value==""){
+        document.getElementById("error2").innerHTML="This Field is Required!";
+        Go = false;
+    }
+    if(document.getElementById("pname").value==""){
+        document.getElementById("error3").innerHTML="This Field is Required!";
+        Go = false;
+    }
+    if(document.getElementById("email").value==""){
+        document.getElementById("error4").innerHTML="Please Enter a Valid Address!";
+        Go = false;
+    }
+    if(document.getElementById("cpass").value==""){
+        document.getElementById("error5").innerHTML="Please Enter a Valid Address!";
+        Go = false;
+    }
+    if(document.getElementById("pass").value==""){
+        document.getElementById("error6").innerHTML="This Field is Required!";
+        Go = false;
+    }
+    if(document.getElementById("cpass").value!=document.getElementById("pass").value){
+        document.getElementById("error5").innerHTML="Please Enter Same As above!";
+        Go = false;
+    }
+    if(document.getElementById("birthdate").value==""){
+        document.getElementById("error7").innerHTML="Please Enter a Valid DAte of Birth!";
+        Go = false;
+    }
+    if(document.getElementById("province").value===""){
+        document.getElementById("error4").innerHTML="Please Select your Province!";
+        Go = false;
+    }
+}
+ 
+ </script>
+</head>
+<body>
+    <h1>Online Registration Form</h1>
+    <table id="table" style="background-color: cornflowerblue">
+    <tr>
+        <td>First Name:</td>
+        <td><input id="fname" type="text"><spam id="error1"></spam></td>
+    </tr>
+
+    <tr>
+        <td>Last Name:</td>
+        <td><input id="lname" type="text"><spam id="error2"></spam></td>
+    </tr>
+
+
+    <tr>
+        <td>Preffered Name:</td>
+        <td><input id="pname" type="text"><spam id="error3"></spam></td>
+    </tr>
+
+    <tr>
+        <td>Email:</td>
+        <td><input id="email" type="text"><spam id="error4"></spam></td>
+    </tr>
+
+    <tr>
+        <td>Password</td>
+        <td><input id="pass" type="text"><spam id="error5"></spam></td>
+    </tr>
+
+    <tr>
+        <td>Confirm Password:</td>
+        <td><input id="cpass" type="password"><spam id="error6"></spam></td>
+    </tr>
+
+    <tr>
+        <td>Birthdate</td>
+        <td><input id="birthdate" type="date"><spam id="error7"></spam></td>
+    </tr>
+    <tr>
+        <td>Select your Province:</td>
+        <td><select id="province">
+            <option>--Province--</option>
+            <option>ON</option>
+            <option>QC</option>
+            <option>NS</option>
+            <option>NB</option>
+            <option>MB</option>
+            <option>BC</option>
+            <option>PE</option>
+            <option>SK</option>
+            <option>AB</option>
+        </select><spam id="error8"></spam></td>
+    </tr>
+    <tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="submit" onclick="validation()">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="Signup.html"style ="border:1px solid green;padding:4px;background-color:aliceblue; font-size:16px; text-decoration: none">reset</a></td></tr>
+    </table><br>
+</body>
+</html>

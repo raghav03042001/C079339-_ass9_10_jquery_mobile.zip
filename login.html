@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        body{background-color:aqua;}
+        table{border:5px solid green;
+        padding-top:100px;
+        padding-bottom:100px;
+        padding-left:30px;
+        padding-right:30px;
+        margin: auto;}
+        h1{padding-left: 700px;
+        }
+        h2{padding-left: 650px;}
+        h1{padding-top:100px;}
+    </style>
+    <script>
+    function validate(){
+        if(document.getElementById("Email").value==""){document.getElementById("error_Email").innerHTML="This Field is required"}
+        if(document.getElementById("pass").value==""){document.getElementById("error_pass").innerHTML="This Field Is Required"}
+
+        if(document.getElementById("Email").value=="admin@lcit.com"){letsGo = true; if(document.getElementById("pass").value=="lcit123")
+        {
+            letsGo = true;
+            document.getElementById("submit").href="Home.html"}}
+  
+        }
+        </script>
+        </head>
+        <body>
+        <table style="background-color: cornflowerblue">
+            <h1>Hello!</h1>
+            <h2>LOg In To Your Account!</h2>
+            <tr>
+                <td>Email:</td>
+                <td><input type="Email" id="Email"><spam id="error_Email"></spam></td>
+                
+            </tr>
+            <br>
+            <tr>
+            <td>Password:</td>
+            <td><input type="Password" id="pass"><spam id="error_pass"></spam></td>
+            </tr>
+            <br>
+            <tr>
+                <td><br><br><br><br></td>
+                <td><a class="button" id="submit" href="#" onclick="validate()" style="border: 2px solid green; padding: 10px; text-decoration: none;font-size: 20px;background-color: whitesmoke">login</a></td>
+            </tr>
+        </table>
+        </body>
+</html>
